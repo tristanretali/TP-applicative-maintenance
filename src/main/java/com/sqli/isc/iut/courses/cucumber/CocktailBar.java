@@ -23,4 +23,13 @@ public class CocktailBar {
         }
     }
 
+    public Customer findCustomerByLastName(String lastName) {
+        for (Customer customer : customers) {
+            if(customer.getLastName().equals(lastName)) {
+                return customer;
+            }
+        }
+        return null;
+    }
+
 }
